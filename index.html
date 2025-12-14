@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutrisFind - Solusi Resep Simpel & Bergizi oleh Lisa Aliya Yumna</title>
-    <!-- Load Tailwind CSS -->
+    <title>NutrisFind - Solusi Resep Simpel, Bergizi, & Anti-Boros</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Set Font to Inter -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0fff0; /* Very light, fresh green background */
+            background-color: #f7fff7; /* Even lighter, fresh background */
         }
         /* Custom styles for the fresh, sage green look */
         .primary-color {
@@ -23,152 +22,169 @@
         .secondary-color {
             background-color: #94b998; /* Light Sage Accent */
         }
+        /* Animation for CTA */
+        @keyframes pulse-yellow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 204, 0, 0.8); }
+        }
+        .cta-pulse {
+            animation: pulse-yellow 2s infinite;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-10">
+    <header class="bg-white shadow-lg sticky top-0 z-20">
         <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold primary-text">NutrisFind</h1>
+            <h1 class="text-2xl font-extrabold primary-text">NutrisFind</h1>
             <nav>
-                <!-- Dapatkan Panduan -->
-                <a href="#cta" class="px-4 py-2 bg-yellow-500 text-white font-medium rounded-lg hover:bg-yellow-600 transition duration-300 shadow-md">Dapatkan Panduan</a>
+                <a href="#cta" class="px-5 py-2 primary-color text-white font-medium rounded-full hover:bg-[#325c35] transition duration-300 shadow-lg">Dapatkan Sekarang</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="primary-color text-white py-16 md:py-24" id="hero">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-                Masak Cerdas, Hidup Sehat: Solusi Simpel Ide Masakan Bergizi
+    <section class="primary-color text-white pt-16 pb-20 md:pt-24 md:pb-32 relative overflow-hidden" id="hero">
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <p class="text-yellow-300 font-semibold mb-3 tracking-wider">SOLUSI ANAK KOST & KELUARGA MUDA</p>
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">
+                Ubah Bahan Sisa Kulkas Jadi <span class="text-yellow-400">Resep Lezat & Bergizi</span> dalam Sekejap!
             </h2>
-            <p class="text-lg md:text-xl mb-8 font-light">
-                Stop bingung mau masak apa! NutrisFind membantu Anda menemukan resep sehat dan bergizi hanya dengan **memasukkan bahan yang tersedia di kulkas Anda.**
+            <p class="text-lg md:text-xl mb-10 font-light max-w-3xl mx-auto">
+                **Stop Food Waste, Start Smart Cooking!** NutrisFind adalah panduan resep yang cerdas, praktis, anti-boros, dan lengkap dengan informasi gizi.
             </p>
             
-            <!-- Price Highlight -->
-            <div class="mb-8 p-4 bg-white text-gray-900 rounded-xl shadow-2xl inline-block transform hover:scale-105 transition duration-300">
-                <p class="text-xl font-semibold">Investasi Kesehatan Anda:</p>
-                <p class="text-5xl font-extrabold primary-text">Rp 12.000</p>
+            <div class="mb-10 p-5 bg-white text-gray-900 rounded-2xl shadow-2xl inline-block transform hover:scale-105 transition duration-500 border-4 border-yellow-500">
+                <p class="text-xl font-semibold text-red-600 mb-1">PROMO SPESIAL PERDANA!</p>
+                <p class="text-2xl font-normal line-through text-gray-500">Normal Rp 50.000</p>
+                <p class="text-6xl font-extrabold primary-text">HANYA Rp 12.000</p>
             </div>
             
-            <!-- Main CTA Button -->
             <div id="cta">
-                <a href="https://wa.me/6281542471451?text=Halo%20Lisa%2C%20saya%20tertarik%20dengan%20Panduan%20Resep%20NutrisFind%20%28Rp%2012.000%29.%20Mohon%20informasi%20pemesanannya." 
-                   target="_blank" 
-                   class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 text-2xl font-bold py-4 px-10 rounded-xl shadow-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-105">
-                    <svg class="w-7 h-7 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12.04 2C7.54 2 3.82 5.73 3.82 10.24c0 1.77.58 3.44 1.63 4.83l-1.63 4.77 4.93-1.59c1.3.47 2.68.74 4.09.74 4.5 0 8.23-3.73 8.23-8.24s-3.73-8.24-8.23-8.24zm0 15.02c-1.28 0-2.48-.37-3.5-1.01l-.25-.15-2.61.85.87-2.54-.17-.26c-.68-1.04-1.04-2.25-1.04-3.59 0-3.52 2.87-6.39 6.39-6.39 3.52 0 6.39 2.87 6.39 6.39s-2.87 6.39-6.39 6.39zm3.53-4.83c-.19-.1-.69-.34-.8-.38-.11-.04-.19-.06-.27.06-.08.11-.31.38-.38.46-.07.08-.15.09-.28.03-.13-.06-.54-.2-1.03-.63-.38-.33-.64-.74-.72-.88-.08-.14-.01-.22.06-.28.06-.06.14-.14.2-.21.06-.06.08-.11.11-.18.03-.08.01-.14-.01-.2-.04-.11-.27-.64-.37-.88-.1-.23-.2-.19-.27-.19-.07 0-.15-.01-.23-.01s-.19.01-.29.13c-.1.11-.38.37-.38.92 0 .55.39 1.07.45 1.15.06.07.76 1.16 1.84 1.63 1.08.47 1.25.43 1.67.4.42-.03 1.34-.54 1.53-1.06.19-.52.19-.97.13-1.06-.06-.09-.23-.14-.49-.27z"/>
-                    </svg>
-                    DAPATKAN PANDUAN RESEP SEKARANG!
+                <a href="https://lisaaliya.github.io/NutrisFind/"
+                    target="_blank"
+                    class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 text-2xl font-extrabold py-4 px-12 rounded-full shadow-2xl hover:bg-yellow-300 transition duration-300 cta-pulse border-b-4 border-yellow-600">
+                    <i class="fa-solid fa-cart-shopping w-7 h-7 mr-3"></i>
+                    YA, SAYA MAU RESEP ANTI-BOROS INI!
                 </a>
             </div>
-            <p class="mt-4 text-sm opacity-90">Hubungi Lisa Aliya Yumna: 081542471451</p>
+            <p class="mt-4 text-sm opacity-90 italic">Klik sekarang sebelum harga kembali normal!</p>
         </div>
     </section>
 
-    <!-- Features / Manfaat Section -->
+    <section class="py-16 bg-f7fff7" id="problem">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 primary-text">Apakah Ini Masalah Anda Setiap Hari?</h3>
+            <div class="grid md:grid-cols-2 gap-10 text-center">
+                <div class="p-6 bg-red-50 rounded-xl shadow-lg border-l-4 border-red-400">
+                    <i class="fa-solid fa-sack-xmark text-4xl text-red-500 mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Makanan Sering Terbuang</h4>
+                    <p class="text-gray-600">Sering membeli bahan yang akhirnya busuk di kulkas karena bingung mau dimasak apa?</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-xl shadow-lg border-l-4 border-blue-400">
+                    <i class="fa-solid fa-face-thinking text-4xl text-blue-500 mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Bingung & Membuang Waktu</h4>
+                    <p class="text-gray-600">Menghabiskan waktu berjam-jam untuk mencari ide resep yang cocok dengan stok bahan dan diet Anda?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="py-16 bg-white" id="manfaat">
         <div class="max-w-7xl mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center mb-12 primary-text">Mengapa NutrisFind Adalah Solusi Masak Terbaik?</h3>
+            <h3 class="text-3xl font-bold text-center mb-12 primary-text">Inilah Keunggulan NutrisFind: Resep yang Lebih dari Sekedar Masakan</h3>
             <div class="grid md:grid-cols-3 gap-8">
 
-                <!-- Benefit 1: Input Bahan -->
-                <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#3c6e40]">
-                    <div class="primary-text mb-4">
-                        <!-- Icon: List/Inventory -->
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Cari Resep dari Bahan Sisa</h4>
-                    <p class="text-gray-600">Tidak perlu repot belanja. Cukup masukkan bahan yang sudah Anda miliki, NutrisFind akan menyajikan resep yang bisa Anda masak segera.</p>
+                <div class="p-6 rounded-xl shadow-xl transition duration-300 border-t-8 border-yellow-400 bg-green-50">
+                    <i class="fa-solid fa-recycle text-4xl primary-text mb-4"></i>
+                    <h4 class="text-2xl font-extrabold mb-2 text-gray-800">Maksimalisasi Bahan Kulkas</h4>
+                    <p class="text-gray-600">Cukup masukkan bahan sisa Anda. NutrisFind akan menyulapnya menjadi hidangan yang lezat, sehat, dan menghemat uang belanja.</p>
                 </div>
 
-                <!-- Benefit 2: Kandungan Gizi & Diet -->
-                <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#3c6e40]">
-                    <div class="primary-text mb-4">
-                        <!-- Icon: Nutrition/Health -->
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.111a.575.575 0 01.382.492v12.398a.575.575 0 01-.382.492l-9.172 3.44a.575.575 0 01-.588 0l-9.172-3.44a.575.575 0 01-.382-.492V8.381a.575.575 0 01.382-.492l9.172-3.44a.575.575 0 01.588 0l9.172 3.44z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Informasi Gizi Lengkap</h4>
-                    <p class="text-gray-600">Setiap resep dilengkapi data kandungan gizi (Energi, Protein, Lemak, Karbohidrat), manfaat, dan cocok untuk program diet tertentu (misal: diet rendah karbo).</p>
+                <div class="p-6 rounded-xl shadow-xl transition duration-300 border-t-8 border-yellow-400 bg-green-50">
+                    <i class="fa-solid fa-heart-pulse text-4xl primary-text mb-4"></i>
+                    <h4 class="text-2xl font-extrabold mb-2 text-gray-800">Jaminan Gizi & Diet Terukur</h4>
+                    <p class="text-gray-600">Setiap resep hadir dengan data akurat (Energi, Protein, Lemak, Karbo) dan penanda diet (Keto, Rendah Karbo, dll.) untuk gaya hidup sehat Anda.</p>
                 </div>
 
-                <!-- Benefit 3: Harga Terjangkau -->
-                <div class="bg-green-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#3c6e40]">
-                    <div class="primary-text mb-4">
-                        <!-- Icon: Saving/Money -->
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2v2m0 0v2m-3-4h6m-9-3.5a1.5 1.5 0 011.5-1.5h11a1.5 1.5 0 011.5 1.5v6.5a1.5 1.5 0 01-1.5 1.5H6.5a1.5 1.5 0 01-1.5-1.5v-6.5z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Solusi Anti-Boros Anak Kost</h4>
-                    <p class="text-gray-600">Maksimalisasi bahan yang ada mengurangi pemborosan. Dapatkan panduan lengkap ini hanya dengan **Rp 12.000**. Sangat terjangkau!</p>
+                <div class="p-6 rounded-xl shadow-xl transition duration-300 border-t-8 border-yellow-400 bg-green-50">
+                    <i class="fa-solid fa-stopwatch text-4xl primary-text mb-4"></i>
+                    <h4 class="text-2xl font-extrabold mb-2 text-gray-800">Resep Praktis, Siap Saji Cepat</h4>
+                    <p class="text-gray-600">Dirancang untuk yang sibuk. Resep-resep di NutrisFind mudah diikuti, cepat disiapkan, tanpa mengurangi kualitas rasa dan nutrisi.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Visual Appeal Section (Tampilan Asli) -->
-    <section class="py-16 secondary-color text-gray-800" id="preview">
+    <section class="py-16 secondary-color text-gray-900" id="scarcity">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">STOP TUNDA KESEHATAN & HEMAT ANDA!</h3>
+            <p class="text-xl mb-6 font-medium">
+                Pikirkan berapa banyak uang yang Anda buang karena bahan makanan terbuang? Hanya dengan <span class="text-red-700 font-extrabold">Rp 12.000</span>, Anda mendapatkan investasi jangka panjang untuk efisiensi dapur Anda.
+            </p>
+            <div class="bg-red-600 text-white p-4 rounded-lg inline-block shadow-xl">
+                <p class="text-2xl font-bold">Harga Promo ini <span class="underline">TIDAK BERLAKU SELAMANYA!</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-f0fff0" id="preview">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-8">Tampilan Panduan Resep yang Menarik & Informatif</h3>
-            <p class="text-lg mb-8 max-w-2xl mx-auto">
-                Panduan NutrisFind disajikan dengan desain yang bersih, dominasi warna *sage green* yang menenangkan, dan lengkap dengan informasi gizi.
+            <h3 class="text-3xl font-bold mb-8 primary-text">Intip Tampilan Panduan Resep NutrisFind</h3>
+            <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-700">
+                Desain bersih, dominasi *sage green* yang menenangkan, dan tata letak yang fokus pada kemudahan membaca dan informasi gizi yang esensial.
             </p>
             
-            <!-- Menggunakan gambar yang diunggah pengguna -->
-            <img src="uploaded:image_954d38.png-989f59b5-950e-4a0b-be33-cabc596b5fd8" 
-                 alt="Tampilan Panduan Resep NutrisFind" 
-                 class="mx-auto w-full max-w-lg h-auto rounded-xl shadow-2xl border-4 border-white object-cover">
-            <p class="mt-4 text-sm italic text-gray-700">Tampilan Panduan Resep NutrisFind yang bersih dan informatif.</p>
+            <img src="uploaded:image_954d38.png-989f59b5-950e-4a0b-be33-cabc596b5fd8"
+                  alt="Tampilan Panduan Resep NutrisFind"
+                  class="mx-auto w-full max-w-xl h-auto rounded-2xl shadow-2xl border-4 border-[#3c6e40] object-cover transition duration-500 hover:shadow-3xl">
+            <p class="mt-4 text-sm italic text-gray-600">Contoh halaman resep: fokus pada langkah mudah dan data gizi.</p>
         </div>
     </section>
 
-    <!-- Author Section (Lisa Aliya Yumna) -->
-    <section class="py-16 bg-white" id="author">
+    <section class="py-16 bg-white border-t border-gray-100" id="author">
         <div class="max-w-5xl mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold primary-text mb-4">Dibuat oleh Lisa Aliya Yumna</h3>
+            <h3 class="text-3xl font-bold primary-text mb-4">Dirancang Khusus oleh Lisa Aliya Yumna</h3>
             <div class="flex flex-col items-center">
-                <img src="https://placehold.co/120x120/3c6e40/ffffff?text=L.A.Y" alt="Lisa Aliya Yumna" class="w-24 h-24 rounded-full mb-4 shadow-xl border-4 border-gray-100">
-                <h4 class="text-2xl font-semibold text-gray-800">Lisa Aliya Yumna</h4>
-                <p class="text-gray-600 mt-2 max-w-2xl">
-                    Lisa Aliya Yumna mendedikasikan NutrisFind untuk memberikan solusi praktis bagi siapapun yang ingin makan sehat tanpa ribet atau membuang-buang bahan makanan. Fokus pada efisiensi dan nutrisi!
+                <img src="https://placehold.co/120x120/3c6e40/ffffff?text=Lisa+Yumna" alt="Lisa Aliya Yumna" class="w-28 h-28 rounded-full mb-4 shadow-xl border-4 border-yellow-400">
+                <h4 class="text-2xl font-extrabold text-gray-800">Lisa Aliya Yumna</h4>
+                <p class="text-gray-600 mt-2 max-w-2xl italic">
+                    "Saya menciptakan NutrisFind karena saya tahu betapa frustrasinya memiliki bahan di kulkas tetapi tidak tahu harus memasak apa. Ini adalah solusi saya untuk hidup sehat, hemat, dan efisien."
                 </p>
-                <a href="https://lisaaliya.github.io/NutrisFind/" target="_blank" class="mt-4 text-sm font-medium primary-text hover:underline">Lihat Proyek Utama NutrisFind &rarr;</a>
+                <a href="https://lisaaliya.github.io/NutrisFind/" target="_blank" class="mt-4 text-md font-bold primary-text hover:underline flex items-center">
+                    <i class="fa-solid fa-external-link-alt mr-2"></i> Kunjungi Proyek Utama NutrisFind
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
     <section class="py-16 primary-color bg-opacity-95" id="final-cta-bottom">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h3 class="text-3xl sm:text-4xl font-extrabold mb-4 text-white">Jangan Biarkan Bahan Makanan Terbuang Sia-sia!</h3>
-            <p class="text-xl text-white opacity-90 mb-8">
-                Dapatkan panduan resep cerdas NutrisFind dan ubah kebingungan memasak menjadi solusi bergizi yang efisien.
+            <h3 class="text-4xl font-extrabold mb-4 text-white">Jangan Tunda Lagi! Waktunya Masak Cerdas & Hemat</h3>
+            <p class="text-xl text-white opacity-90 mb-8 font-light">
+                Dapatkan akses instan ke panduan resep yang akan mengubah kebiasaan masak Anda selamanya.
             </p>
-            <!-- Price Highlight -->
-            <div class="mb-6 p-3 bg-red-400 text-white rounded-xl inline-block shadow-lg">
-                <p class="text-3xl font-bold">HANYA RP 12.000 SAJA!</p>
+            <div class="mb-6 p-3 bg-red-500 text-white rounded-xl inline-block shadow-lg border-2 border-white">
+                <p class="text-3xl font-bold">KHUSUS HARI INI: RP 12.000!</p>
             </div>
             
-            <!-- Final CTA Button -->
-            <a href="https://wa.me/6281542471451?text=Halo%20Lisa%2C%20saya%20tertarik%20dengan%20Panduan%20Resep%20NutrisFind%20%28Rp%2012.000%29.%20Mohon%20informasi%20pemesanannya." 
-               target="_blank" 
-               class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 text-xl font-bold py-3 px-8 rounded-xl shadow-xl hover:bg-yellow-300 transition duration-300 transform hover:scale-105">
-                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.04 2C7.54 2 3.82 5.73 3.82 10.24c0 1.77.58 3.44 1.63 4.83l-1.63 4.77 4.93-1.59c1.3.47 2.68.74 4.09.74 4.5 0 8.23-3.73 8.23-8.24s-3.73-8.24-8.23-8.24zm0 15.02c-1.28 0-2.48-.37-3.5-1.01l-.25-.15-2.61.85.87-2.54-.17-.26c-.68-1.04-1.04-2.25-1.04-3.59 0-3.52 2.87-6.39 6.39-6.39 3.52 0 6.39 2.87 6.39 6.39s-2.87 6.39-6.39 6.39zm3.53-4.83c-.19-.1-.69-.34-.8-.38-.11-.04-.19-.06-.27.06-.08.11-.31.38-.38.46-.07.08-.15.09-.28.03-.13-.06-.54-.2-1.03-.63-.38-.33-.64-.74-.72-.88-.08-.14-.01-.22.06-.28.06-.06.14-.14.2-.21.06-.06.08-.11.11-.18.03-.08.01-.14-.01-.2-.04-.11-.27-.64-.37-.88-.1-.23-.2-.19-.27-.19-.07 0-.15-.01-.23-.01s-.19.01-.29.13c-.1.11-.38.37-.38.92 0 .55.39 1.07.45 1.15.06.07.76 1.16 1.84 1.63 1.08.47 1.25.43 1.67.4.42-.03 1.34-.54 1.53-1.06.19-.52.19-.97.13-1.06-.06-.09-.23-.14-.49-.27z"/>
-                </svg>
-                PESAN PANDUAN SEKARANG! (RP 12K)
+            <a href="https://lisaaliya.github.io/NutrisFind/"
+                target="_blank"
+                class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 text-xl font-bold py-4 px-10 rounded-full shadow-2xl hover:bg-yellow-300 transition duration-300 transform hover:scale-105">
+                <i class="fa-solid fa-arrow-circle-right w-6 h-6 mr-3"></i>
+                AMBIL PROMO RP 12.000 SEKARANG
             </a>
+            <p class="mt-4 text-sm opacity-80">Anda akan diarahkan ke halaman produk untuk informasi pemesanan.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 text-center text-sm">
             <p>&copy; 2025 NutrisFind by Lisa Aliya Yumna. Solusi Sehat & Simpel.</p>
-            <p class="mt-2">Kontak Pemesanan: 081542471451</p>
+            <div class="mt-2">
+                <a href="#hero" class="hover:text-yellow-400 mx-2">Beranda</a> | 
+                <a href="#manfaat" class="hover:text-yellow-400 mx-2">Manfaat</a> | 
+                <a href="https://lisaaliya.github.io/NutrisFind/" target="_blank" class="hover:text-yellow-400 mx-2">Link Produk</a>
+            </div>
         </div>
     </footer>
 
